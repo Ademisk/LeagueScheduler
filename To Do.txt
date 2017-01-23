@@ -1,0 +1,18 @@
+Major
+====================
+- Convert to angularjs 2.0/typescript
+- Develop or find Cors solution
+- Support all leagues
+- Get schedule for each week
+
+
+
+Minor
+====================
+
+
+
+
+
+Bug Fixes
+====================

@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<script src="lib/jquery-2.2.2.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/popup.css"/>
+		<script type="text/javascript" src="js/popup.js"></script>
+		<script type="text/javascript" src="js/utils.js"></script>
+	</head>
+	<body>
+		<div id="settings_view" class="settingsView">
+			<div id="settings_header" class="settingsHeader">
+				<div id="title" class="settingsTitle">Settings</div>
+				<a id="back_button" class="backButton">&lt;&lt;</a>
+			</div>
+			<hr/>
+			<div id="settings_container" class="settingsContainer">
+				<div id="usability_settings" class="optionSection">
+					<div id="usability_header" class="optionHeader">Usability</div>
+					<div id="usability_container" class="optionContainer">
+						<div class="optionElement">
+							<input type="checkbox" id="hide_results" class="optionCheck usability" checked />
+							<label for="hide_results">Hide Match Results</label>
+							<div class="optionElement">
+								<div>View Mode</div>
+								<form action="" id="view_mode" class="optionRadio usability">
+									<input type="radio" name="viewMode" id="regular_mode"/ checked><label for="regular_mode">Regular</label>
+									<input type="radio" name="viewMode" id="lite_mode"/><label for="lite_mode">Lite</label>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="layout_settings" class="optionSection">
+					<div id="layout_header" class="optionHeader">Leagues</div>
+					<div id="layout_container" class="optionContainer">
+						<div>Leagues</div>
+						<input type="checkbox" id="na_lcs_league" class="optionCheck leagues" checked /> <label for="na_lcs_league">NA LCS</label><br/>
+						<input type="checkbox" id="eu_lcs_league" class="optionCheck leagues" checked /> <label for="eu_lcs_league">EU LCS</label><br/>
+					</div>
+				</div>
+				<div id="fantasy_settings" class="optionSection">
+					<div id="fantasy_header" class="optionHeader">Fantasy</div>
+					<div id="fantasy_container" class="optionContainer">
+						<div class="optionElement">
+							<input type="checkbox" id="show_fantasy_pts" class="optionCheck fantasy" checked />
+							<label for="show_fantasy_pts">Show Fantasy Points</label>
+						</div>
+						<div class="optionElement">
+							<div>Fantasy Points Calculation</div>
+							<form action="" id="fantasy_mode" class="optionRadio fantasy">
+								<input type="radio" name="fantasyMode" id="best_game"/><label for="best_game">Best Game</label>
+								<input type="radio" name="fantasyMode" id="two_games" checked/><label for="two_games">First Two Games</label>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="schedule_view" class="scheduleView">
+			<div id="league_select" class="leagueSelect">
+				<select id="league_select" class="leagueSelect">
+					<option value="NA" selected>NA LCS</option>
+					<option value="EU">EU LCS</option>
+				</select>
+				<!--<div id="eu" class="leagueTabSelect">EU LCS</div>
+				<div id="na" class="leagueTabSelect">NA LCS</div>-->
+			</div>
+			<div id="schedule">
+				<div class="header">
+					<select id="bracket_select" class="bracketSelect">
+					</select>
+					<div id="week_select" class="weekSelect">
+						<div id="block_name" class="blockName"></div>
+						<!--<div id="week1_select" class="weekTabSelect">1</div>
+						<div id="week2_select" class="weekTabSelect">2</div>
+						<div id="week3_select" class="weekTabSelect">3</div>
+						<div id="week4_select" class="weekTabSelect">4</div>
+						<div id="week5_select" class="weekTabSelect">5</div>
+						<div id="week6_select" class="weekTabSelect">6</div>
+						<div id="week7_select" class="weekTabSelect">7</div>
+						<div id="week8_select" class="weekTabSelect">8</div>
+						<div id="week9_select" class="weekTabSelect">9</div>-->
+					</div>
+					<input type="button" id="settings_button" class="settingsButton" src="icons/settings.png" />
+				</div>
+				<div id="week" class="weekContainer">
+					<!-- Days and matches go here -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
